@@ -20,7 +20,10 @@ jobs:
     steps:
       - name: Ejecutar
         run: ls
-
+      - name: imprimir variable
+        run: echo "Valor variable" ${{vars.BASEDEDATOS}}
+      - name: imprimir secret
+        run: echo "Valor variable" ${{secrets.CLAVEBD}}
 
         
 
